@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: learning
+      POSTGRES_PASSWORD: your_password   # type your database password here
       POSTGRES_DB: postgres
     ports:
       # Host port 5433 is used to avoid clashing with an already-running local
