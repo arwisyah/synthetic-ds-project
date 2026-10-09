@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: synthetic_ds_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: learning
+      POSTGRES_DB: postgres
+    ports:
+      # Host port 5433 is used to avoid clashing with an already-running local
+      # PostgreSQL on 5432. If you start this container, set
+      # POSTGRES_PORT=5433 in .env so the application connects to it.
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
