@@ -10,8 +10,10 @@ Jupyter notebook, and model training and evaluation.
 > This entire project — the code, the synthetic data, the Jupyter notebook, and
 > this documentation — was **generated end-to-end by an AI agent** (OpenCode,
 > using the **Big Pickle** model). No part of it was hand-authored by a human.
-> It is intended for demonstration and educational purposes and should be
-> reviewed, validated, and adapted before any production or research use.
+> This project is **just a test**, built to probe and demonstrate the current
+> capabilities of AI agents. It is intended for demonstration and educational
+> purposes and should be reviewed, validated, and adapted before any production
+> or research use.
 
 ## Project structure
 
@@ -43,7 +45,7 @@ Two options:
 
   ```
   POSTGRES_USER=postgres
-  POSTGRES_PASSWORD=learning
+  POSTGRES_PASSWORD=your_password   # type your database password here
   POSTGRES_DB=postgres
   POSTGRES_HOST=localhost
   POSTGRES_PORT=5432
