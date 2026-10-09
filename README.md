@@ -1,8 +1,17 @@
-# Synthetic Data Science Project
+# Customer Churn Prediction from Synthetic Data (PostgreSQL + Random Forest)
 
-An end-to-end, reproducible data science project: synthetic customer data is
-generated into a PostgreSQL database, then analysed in a Jupyter notebook
-(EDA + a Random Forest churn model).
+An end-to-end, reproducible pipeline that **generates synthetic customer
+records into a PostgreSQL database** and **predicts customer churn** with a
+Random Forest classifier. It covers the full workflow in one place: synthetic
+data generation, database ingestion, exploratory data analysis (EDA) in a
+Jupyter notebook, and model training and evaluation.
+
+> ## ⚠️ AI-Generated Disclaimer
+> This entire project — the code, the synthetic data, the Jupyter notebook, and
+> this documentation — was **generated end-to-end by an AI agent** (OpenCode,
+> using the **Big Pickle** model). No part of it was hand-authored by a human.
+> It is intended for demonstration and educational purposes and should be
+> reviewed, validated, and adapted before any production or research use.
 
 ## Project structure
 
